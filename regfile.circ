@@ -152,7 +152,6 @@
     <wire from="(670,940)" to="(670,1030)"/>
     <wire from="(720,670)" to="(720,760)"/>
     <wire from="(720,910)" to="(720,1000)"/>
-    <wire from="(560,590)" to="(560,680)"/>
     <wire from="(730,980)" to="(770,980)"/>
     <wire from="(910,780)" to="(910,870)"/>
     <wire from="(1120,1110)" to="(1180,1110)"/>
@@ -202,7 +201,6 @@
     <wire from="(1010,800)" to="(1010,980)"/>
     <wire from="(880,1130)" to="(890,1130)"/>
     <wire from="(1190,1040)" to="(1300,1040)"/>
-    <wire from="(500,590)" to="(560,590)"/>
     <wire from="(1080,220)" to="(1080,240)"/>
     <wire from="(380,1290)" to="(700,1290)"/>
     <wire from="(670,800)" to="(670,870)"/>
@@ -352,6 +350,7 @@
     <wire from="(460,850)" to="(500,850)"/>
     <wire from="(870,960)" to="(890,960)"/>
     <wire from="(300,390)" to="(320,390)"/>
+    <wire from="(560,520)" to="(560,680)"/>
     <wire from="(1230,120)" to="(1230,240)"/>
     <wire from="(1070,800)" to="(1070,1180)"/>
     <wire from="(320,540)" to="(320,580)"/>
@@ -585,10 +584,6 @@
     <comp lib="1" loc="(690,1050)" name="AND Gate"/>
     <comp lib="1" loc="(690,1130)" name="AND Gate"/>
     <comp lib="1" loc="(690,1210)" name="AND Gate"/>
-    <comp lib="0" loc="(500,590)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="write_en"/>
-    </comp>
     <comp lib="0" loc="(360,1120)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="5"/>
@@ -704,6 +699,10 @@
     </comp>
     <comp lib="0" loc="(610,1380)" name="Constant">
       <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(560,520)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="write_en"/>
     </comp>
   </circuit>
 </project>
